@@ -5,12 +5,12 @@ namespace Carville.Pricing;
 /// </summary>
 public enum CalcPricesErrorKind
 {
-    /// <summary>Цена — NaN или бесконечность.</summary>
+    /// <summary>Цена равна NaN или бесконечности.</summary>
     PriceNotFinite,
 
     /// <summary>Цена отрицательная.</summary>
     PriceNegative,
 
-    /// <summary>Цена больше допустимого максимума.</summary>
+    /// <summary>Цена с НДС больше допустимого максимума.</summary>
     PriceTooLarge
 }
