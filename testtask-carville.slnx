@@ -1,0 +1,9 @@
+<Solution>
+    <Folder Name="/docs/">
+        <File Path="docs\TASK.md" />
+    </Folder>
+    <Folder Name="/src/">
+        <Project Path="src/ClassLibrary/ClassLibrary.csproj" />
+    </Folder>
+
+</Solution>
