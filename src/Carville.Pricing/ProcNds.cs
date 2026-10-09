@@ -12,10 +12,12 @@ public sealed record ProcNds
     private const int MinValue = 0;
     private const int MaxValue = 99;
 
+    /// <summary>Процент НДС.</summary>
     public int Value { get; }
 
     private ProcNds(int value) => Value = value;
 
+    /// <param name="value">Процент НДС.</param>
     /// <exception cref="ValidationException">Значение вне допустимого диапазона.</exception>
     public static ProcNds Create(int value)
     {
@@ -26,6 +28,8 @@ public sealed record ProcNds
         return procNds;
     }
 
+    /// <param name="value">Процент НДС.</param>
+    /// <param name="procNds">Созданное значение; null при ошибке.</param>
     public static bool TryCreate(int value, [NotNullWhen(true)] out ProcNds? procNds)
     {
         if (value is < MinValue or > MaxValue)
