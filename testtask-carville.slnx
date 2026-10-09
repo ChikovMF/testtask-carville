@@ -3,6 +3,7 @@
         <File Path="docs\TASK.md" />
     </Folder>
     <Folder Name="/src/">
+        <Project Path="src/Carville.Pricing.Terminal/Carville.Pricing.Terminal.csproj" />
         <Project Path="src/Carville.Pricing/Carville.Pricing.csproj" />
     </Folder>
     <Folder Name="/tests/">
